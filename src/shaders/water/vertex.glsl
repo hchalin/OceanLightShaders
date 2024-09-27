@@ -57,6 +57,8 @@ void main()
     vec3 toB = normalize(b - modelPosition.xyz);
     vec3 computeNormal = cross(toA, toB);
 
+    // END OF NEIGHBORS TECH
+
     // Final position
     vec4 viewPosition = viewMatrix * modelPosition;
     vec4 projectedPosition = projectionMatrix * viewPosition;
